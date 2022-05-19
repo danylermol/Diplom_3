@@ -65,7 +65,7 @@ public class MainPage {
     }
 
     public void isBunsTabOpen() {
-        bunsTitle.shouldBe(visible);
+        bunsTab.shouldHave(Condition.cssClass("tab_tab_type_current__2BEPc"));
     }
 
     public void goToSaucesTab() {
@@ -73,7 +73,7 @@ public class MainPage {
     }
 
     public void isSaucesTabOpen() {
-        saucesTitle.shouldBe(visible);
+        saucesTab.shouldHave(Condition.cssClass("tab_tab_type_current__2BEPc"));
     }
 
     public void goToFillingsTab() {
@@ -81,7 +81,7 @@ public class MainPage {
     }
 
     public void isFillingsTabOpen() {
-        fillingsTitle.shouldBe(visible);
+        fillingsTab.shouldHave(Condition.cssClass("tab_tab_type_current__2BEPc"));
     }
 
     public void isConstructorBlockVisible() {
