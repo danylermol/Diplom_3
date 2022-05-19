@@ -9,10 +9,10 @@ public class RegistrationPage {
 
     public static final String URL = "http://stellarburgers.nomoreparties.site/register";
 
-    @FindBy(how = How.XPATH, using = "//form/fieldset[1]/div/div/input")
+    @FindBy(how = How.XPATH, using = "//label[text() = 'Имя']/../input")
     SelenideElement nameInput;
 
-    @FindBy(how = How.XPATH, using = "//form/fieldset[2]/div/div/input")
+    @FindBy(how = How.XPATH, using = "//label[text() = 'Email']/../input")
     SelenideElement emailInput;
 
     @FindBy(how = How.CSS, using = "input[name=\"Пароль\"]")
